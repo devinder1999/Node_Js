@@ -13,12 +13,37 @@
 
 var http = require("http")
 
-http.createServer(function(req,res)
+http.createServer(function(req,res)    // this is a callback function 
 {
     res.write("This is my first Node.js HTTP Response ")
+    res.write("This is my first Node.js HTTP Response ")
+
+    res.write("This is my first Node.js HTTP Response ")
+
+    res.write("This is my first Node.js HTTP Response ")
+
+    res.write("This is my first Node.js HTTP Response ")
+
+    res.write("This is my first Node.js HTTP Response ")
+
+    res.write("This is my first Node.js HTTP Response ")
+
     res.end("This is the End of the Application")
 
 }).listen(8000)
+
+
+// 8000 = port number 
+
+
+// http://localhost:8050/?name=kuldeep&age=100&location=india
+
+
+// localhost = IP Address :- 127.0.0.1
+//  8050  = port 
+
+// ?name=kuldeep&age=100&location=india    = data 
+
 
 
 
