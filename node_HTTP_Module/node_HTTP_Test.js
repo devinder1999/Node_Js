@@ -11,27 +11,30 @@
 // HTTTP  :- Text
 
 
-var http = require("http")
 
-http.createServer(function(req,res)    // this is a callback function 
-{
-    res.write("This is my first Node.js HTTP Response ")
-    res.write("This is my first Node.js HTTP Response ")
+// var http = require("http")
 
-    res.write("This is my first Node.js HTTP Response ")
+// http.createServer(function(req,res)    // this is a callback function 
+// {
+//     res.write("This is my first Node.js HTTP Response ")
+//    res.end("This is the End of the Application")
+// }).listen(8000)
 
-    res.write("This is my first Node.js HTTP Response ")
+var http = require("http")    // this is the transfer protocol
 
-    res.write("This is my first Node.js HTTP Response ")
+http.createServer(function(req,res)          // req = this is data comming fromt he client 
+{                                             // res = this is the data that we will send to the client
 
-    res.write("This is my first Node.js HTTP Response ")
+    res.write("This is my Server Request")
+    res.end()
 
-    res.write("This is my first Node.js HTTP Response ")
+}).listen(8050)   // this listen function is used to , listen or recive the request for the given port number application only . 
 
-    res.end("This is the End of the Application")
+// URL = IP Address of the machine and Port no. of the application 
 
-}).listen(8000)
 
+// client = "website" ----------request ---------> server 
+//                   <--------------response----------------
 
 // 8000 = port number 
 

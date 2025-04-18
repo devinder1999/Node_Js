@@ -8,7 +8,7 @@ var url = require("url")
 
 
 http.createServer(function(req,res){
-
+   
 
 
     // var data = req.url
