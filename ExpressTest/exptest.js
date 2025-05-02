@@ -47,7 +47,7 @@ app.get("/forgot",function(req,res)
 app.get("/otp",function(req,res)
 {
     // res.send("/Users/kuldeep/Desktop/KuldeepExcellence_Github/Node_Js/ExpressTest/demo.html")
-    res.sendFile("/Users/kuldeep/Desktop/KuldeepExcellence_Github/Node_Js/ExpressTest/demo.html")
+    res.sendFile("C:/Users/Lenovo/OneDrive/Desktop/Node_Js/ExpressTest/demo.html")
 })
 
 app.listen(6050)
