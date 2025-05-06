@@ -7,7 +7,7 @@ app.use(data.static(path.join(__dirname, 'public')));
 
 app.get("/",function(req,res)
 {
-    res.send("Welcome To Davinder Singh Website")
+    res.send(__dirname+"/views/"+"homepage.html")
 })
 
 app.get("/login",function(req,res)
